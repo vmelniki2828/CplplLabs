@@ -1,3 +1,5 @@
+//Роботу виконали студенти групи IT-83 Білоус Максим та Мельник Владислав
+
 #include <QCoreApplication>
 #include "DoMessengerServer.h"
 
