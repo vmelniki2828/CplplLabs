@@ -1,16 +1,17 @@
+// Робота виконана студентами групи ІТ-83 Мельником Владиславом та Білоусом Максимом
+#include <string>
 #include “lib.h”
 using namespace std;
 
+string getBrigadeMember(int groupNumber);
+void writeBrigadeMemberIntoFile(string memberName);
 int main(void)
 {
-FileHandler fileHandler;
 
-	string oleksandr = fileHandler.getBrigadeMemberName(14);
-	string evgenii = fileHandler.getBrigadeMemberName(16);
-	string maksym = fileHandler.getBrigadeMemberName(20);
+string max = getBrigadeMember(9);
+string vlad = getBrigadeMember(4);
 
-	fileHandler.writeStudentNameIntoBrigadeFile(oleksandr);
-	fileHandler.writeStudentNameIntoBrigadeFile(evgenii);
-	fileHandler.writeStudentNameIntoBrigadeFile(maksym);
-	return 0;
+writeBrigadeMemberIntoFile(max);
+writeBrigadeMemberIntoFile(vlad);
+return 0;
 }
